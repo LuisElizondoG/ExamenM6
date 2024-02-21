@@ -33,3 +33,45 @@ num1 <- as.numeric(readline("Ingresa el primer número: "))
 num2 <- as.numeric(readline("Ingresa el segundo número: "))
 operacion <- readline("Ingresa la operación (+, -, *, /): ")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Realizar la operación seleccionada
+if (operacion == "+") {
+  resultado <- sumar(num1, num2)
+} else if (operacion == "-") {
+  resultado <- restar(num1, num2)
+} else if (operacion == "*") {
+  resultado <- multiplicar(num1, num2)
