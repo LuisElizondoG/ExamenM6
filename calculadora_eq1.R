@@ -5,7 +5,6 @@
 # Enrique Pablos Páez A00835037
 # Diego Alejandro Peréz Cisneros A01275561
 
-
 ### Proyecto: Creación de Calculadora en R
 
 # Definir la función para cada operación
@@ -15,4 +14,16 @@ sumar <- function(a, b) {
 
 restar <- function(a, b) {
   return(a - b)
+}
+
+multiplicar <- function(a, b) {
+  return(a * b)
+}
+
+dividir <- function(a, b) {
+  if (b != 0) {
+    return(a / b)
+  } else {
+    return("Error: No se puede dividir por cero")
+  }
 }
