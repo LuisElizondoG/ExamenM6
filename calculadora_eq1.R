@@ -5,6 +5,7 @@
 # Enrique Pablos Páez A00835037
 # Diego Alejandro Peréz Cisneros A01275561
 
+
 ### Proyecto: Creación de Calculadora en R
 
 # Definir la función para cada operación
@@ -33,41 +34,6 @@ num1 <- as.numeric(readline("Ingresa el primer número: "))
 num2 <- as.numeric(readline("Ingresa el segundo número: "))
 operacion <- readline("Ingresa la operación (+, -, *, /): ")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Realizar la operación seleccionada
 if (operacion == "+") {
   resultado <- sumar(num1, num2)
@@ -75,3 +41,11 @@ if (operacion == "+") {
   resultado <- restar(num1, num2)
 } else if (operacion == "*") {
   resultado <- multiplicar(num1, num2)
+} else if (operacion == "/") {
+  resultado <- dividir(num1, num2)
+} else {
+  resultado <- "Operación no válida"
+}
+
+# Imprimir el resultado
+cat("El resultado de la operación es:", resultado, "\n")
